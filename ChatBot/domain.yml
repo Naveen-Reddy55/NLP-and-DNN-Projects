@@ -1,0 +1,56 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - weather
+  - query_corona
+actions:
+  - action_weather
+  - action_cases
+
+slots:
+  city:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: city
+
+  owner:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: owner
+
+entities:
+  - city
+  - owner
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am Saarah, Created by Naveen Reddy...!!!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

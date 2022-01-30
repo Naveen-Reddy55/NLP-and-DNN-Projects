@@ -1,0 +1,125 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: weather
+  examples: | 
+    - what is current weather at [vijayawada](city)
+    - weather of [hyderabad](city)
+    - may I know the temperature of [bangalore]((city))
+    - what is weather of [mangalore]((city))
+    - current temperature of [mumbai](city)
+    - how is weather in [goa](city)
+    - what is [delhi](city) weather condition?
+    - i want to know temperature of [ongole](city) in celisus.
+    - Can I get the weather report of [gandhi nagar](city)
+    - Temperature of [bhopal](city)
+    - tell me about temperature in [guntur](city)
+    - Okay! get me weather report of [nellore](city)
+    - Hey tell me what is temperature at [Manali](city) now.
+    - tell the weather scenario in [jaipur](city)
+    - Make a report of temperature of [kanpur](city)
+    - [Lucknow](city) 
+    - I want the temperature of [chennai](city)
+    - I want the weather and temperature report in [surat](city)
+    - tell about temperature in [nagpur](city) today
+    - do have any information about temperature of [madurai](city)?
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you [Naveen](owner)?
+    - Did [Naveen](owner) made you?
+    - who made you?
+    - Tell me about yourself?
+- intent: query_corona
+  examples: |
+    - how many corona cases does India have?
+    - what are the number of cases of India?
+    - Tell me number of corona cases in India
+    - Can you tell me how many corona cases are there in india?
+    - Get me the data about corona cases in India
+    - Fetch me the details of cases in India
